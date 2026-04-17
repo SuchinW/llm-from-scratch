@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ML artifacts — never commit these
+checkpoints/
+*.pt
+*.pth
+*.safetensors
+*.bin
+wandb/
+runs/
+logs/
+
+# Datasets — always download via scripts
+data/
+!data/.gitkeep
+
+# Notebook outputs
+notebooks/*.ipynb
+
+# Private planning docs
+CODING_PLAN.md
