@@ -60,9 +60,9 @@ Editable install means `from src.attention.multi_head_attention import MultiHead
 
 | Component | File | Status |
 |---|---|---|
-| Self-attention | `src/attention/self_attention.py` | ☐ |
-| Causal self-attention | `src/attention/causal_self_attention.py` | ☐ |
-| Multi-head attention | `src/attention/multi_head_attention.py` | ☐ |
+| Self-attention | [`src/attention/self_attention.py`](src/attention/self_attention.py) · [tests](tests/test_self_attention.py) | ☑ |
+| Causal self-attention | [`src/attention/causal_self_attention.py`](src/attention/causal_self_attention.py) · [tests](tests/test_causal_self_attention.py) | ☑ |
+| Multi-head attention | [`src/attention/multi_head_attention.py`](src/attention/multi_head_attention.py) · [tests](tests/test_multi_head_attention.py) | ☑ |
 | Multi-query attention (MQA) | `src/attention/multi_query_attention.py` | ☐ |
 | Grouped-query attention (GQA) | `src/attention/grouped_query_attention.py` | ☐ |
 | Multi-head latent attention (MLA) | `src/attention/multi_head_latent_attention.py` | ☐ |
