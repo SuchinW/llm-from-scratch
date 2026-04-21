@@ -1,15 +1,13 @@
-import torch
 import torch.nn as nn
 
 class FeedForward(nn.Module):
-    def __init__(self, d_model, d_ff=None, dropout=0.0):
+    def __init__(self, d_model):
         super().__init__()
-        d_ff = d_ff if d_ff is not None else d_model * 4
+
         self.layers = nn.Sequential(
-            nn.Linear(d_model, d_ff),
+            nn.Linear(d_model, d_model * 4),
             nn.GELU(),
-            nn.Linear(d_ff, d_model),
-            nn.Dropout(dropout)
+            nn.Linear(d_model * 4, d_model),
         )
 
     def forward(self, x):

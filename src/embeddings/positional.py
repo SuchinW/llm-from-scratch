@@ -16,6 +16,5 @@ class PositionalEmbedding(nn.Module):
         assert N <= self.max_seq_len, "Input sequence should be smaller than the maximum sequence length"
 
         pos = self.emd(torch.arange(N))
-        print(pos)
 
         return x + pos
